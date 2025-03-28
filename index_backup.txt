@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srikar Kalle | Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #f8f9fa; }
+        .hero { background: url('assets/hero-bg.jpg') no-repeat center center/cover; color: white; padding: 100px 0; text-align: center; position: relative; }
+        .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); }
+        .hero-content { position: relative; z-index: 1; }
+        .section { padding: 60px 0; }
+        .profile-pic { border-radius: 50%; border: 5px solid white; width: 180px; height: 180px; object-fit: cover; box-shadow: 0px 4px 10px rgba(0,0,0,0.2); }
+        .btn-custom { background-color: #007bff; color: white; border-radius: 50px; padding: 10px 20px; }
+        .card:hover { transform: scale(1.05); transition: 0.3s; }
+        footer { background-color: #343a40; color: white; padding: 20px 0; text-align: center; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Srikar Kalle</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#awards">Honors & Awards</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero d-flex align-items-center">
+        <div class="overlay"></div>
+        <div class="container hero-content text-center">
+            <h1 class="display-4">Hello, I'm Srikar Kalle</h1>
+            <p class="lead">Software Engineer | AI Enthusiast | Data Scientist</p>
+            <a href="#contact" class="btn btn-custom">Get in Touch</a>
+        </div>
+    </section>
+
+    <section id="about" class="section text-center">
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="C:/Users/Srikar K/Potfolio/assets/srikarkalle.jpg" class="profile-pic" alt="Profile Picture">
+            <p class="mt-3">I am a passionate Software Engineer with expertise in AI, Machine Learning, and Web Development. Currently pursuing an MSc in Data Science, I specialize in building scalable solutions using Java, Golang, Python, and cutting-edge cloud technologies.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center">Skills</h2>
+            <div class="row text-center">
+                <div class="col-md-4"><i class="fas fa-code fa-3x"></i><h4>Programming</h4><p>Java, Golang, Python, JavaScript, TypeScript, C++</p></div>
+                <div class="col-md-4"><i class="fas fa-server fa-3x"></i><h4>Backend & API</h4><p>Spring Boot, Hibernate, Kafka, Go Gin, REST API, Microservices</p></div>
+                <div class="col-md-4"><i class="fas fa-globe fa-3x"></i><h4>Frontend & Web</h4><p>ReactJS, NodeJS, HTML5, CSS3, Bootstrap, Tailwind</p></div>
+                <div class="col-md-4"><i class="fas fa-database fa-3x"></i><h4>Databases</h4><p>MySQL, MongoDB, PostgreSQL, Data Modeling, Query Optimization</p></div>
+                <div class="col-md-4"><i class="fas fa-cloud fa-3x"></i><h4>Cloud & DevOps</h4><p>AWS (EC2, S3, Lambda), Docker, Kubernetes, CI/CD (Jenkins, GitHub Actions)</p></div>
+                <div class="col-md-4"><i class="fas fa-robot fa-3x"></i><h4>AI & Machine Learning</h4><p>Deep Learning, YOLO, CNN, LSTM, Image Processing, XGBoost</p></div>
+                <div class="col-md-4"><i class="fas fa-bug fa-3x"></i><h4>Testing & Debugging</h4><p>JUnit, Selenium, ELK Stack (Elasticsearch, Logstash, Kibana)</p></div>
+                <div class="col-md-4"><i class="fas fa-tools fa-3x"></i><h4>Tools & IDEs</h4><p>IntelliJ IDEA, Jupyter Notebook, VS Code, Postman, Swagger</p></div>
+                <div class="col-md-4"><i class="fas fa-users fa-3x"></i><h4>Soft Skills</h4><p>Agile Development, Technical Documentation, Leadership, Collaboration</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section bg-white text-center">
+        <div class="container">
+            <h2>Professional Experience</h2>
+            <div class="row">
+                <!-- Software Engineer at Torry Harris Integration Solutions -->
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Software Engineer</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Torry Harris Integration Solutions – India</h6>
+                            <p><strong>Sep 2021 – Sep 2024</strong></p>
+                            <ul>
+                                <li>Designed and developed RESTful APIs in Java Spring and Golang, ensuring scalable and efficient backend solutions.</li>
+                                <li>Delivered Proof of Concepts (PoCs) to define creative architectures for REST API projects.</li>
+                                <li>Streamlined application monitoring with comprehensive logging using the ELK Stack (Elasticsearch, Logstash, Kibana).</li>
+                                <li>Provided mentorship to junior team members and delegated tasks as a functional team lead.</li>
+                                <li>Bridged the gap between business goals and development deliverables through thorough stakeholder engagement and requirements gathering.</li>
+                                <li>Conducted robust code reviews, ensuring adherence to best practices and high-quality standards.</li>
+                                <li>Managed the deployment and live launch of applications, ensuring smooth production transitions.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Technical Support Engineer at Exotel Techcom Pvt. Ltd -->
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Technical Support Engineer</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Exotel Techcom Pvt. Ltd – India</h6>
+                            <p><strong>Apr 2021 – Aug 2021</strong></p>
+                            <ul>
+                                <li>Spearheaded the analysis and resolution of customer support tickets, ensuring high-quality service and improved satisfaction metrics.</li>
+                                <li>Automated customer support workflows by developing and deploying Python-based chatbot scripts, fully integrated with Slack bot for real-time team communication.</li>
+                                <li>Analyzed chatbot performance, incorporated cross-functional feedback, and improved interactions for enhanced user engagement and accuracy.</li>
+                                <li>Authored and maintained technical documentation to support knowledge sharing across teams.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="projects" class="section bg-light text-center">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="row">
+                <!-- COVID-19 Prediction Model -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <i class="bi bi-virus" style="font-size: 3rem; color: #007bff;"></i> <!-- Icon for COVID -->
+                        <div class="card-body">
+                            <h5 class="card-title">COVID-19 Prediction Model</h5>
+                            <p class="card-text">A machine learning model that predicts whether a person is affected by COVID-19 based on different circumstances.</p>
+                            <a href="https://github.com/srikarsharma16/PREDICTION-OF-COVID19-INDIA-HOUSTON" class="btn btn-primary" target="_blank">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Machine Learning Portfolio -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <i class="bi bi-braces" style="font-size: 3rem; color: #28a745;"></i> <!-- Icon for Machine Learning -->
+                        <div class="card-body">
+                            <h5 class="card-title">Machine Learning Portfolio</h5>
+                            <p class="card-text">A collection of machine learning projects showcasing data analysis and ML models for various datasets.</p>
+                            <a href="https://github.com/srikarsharma16/DataAnalyticsML-Portfolio" class="btn btn-primary" target="_blank">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 1 (Deep Learning Robot) -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <i class="bi bi-robot" style="font-size: 3rem; color: #ffc107;"></i> <!-- Icon for Robotics -->
+                        <div class="card-body">
+                            <h5 class="card-title">Deep Learning-Based Robot for Garbage Picking</h5>
+                            <p class="card-text">Developed a wireless-controlled autonomous robot capable of real-time garbage detection using YOLO-based object detection and image processing.</p>
+                            <a href="https://drive.google.com/drive/folders/1voFfd6oeDEouBUsKkFJ42JQo7O25XSvU" class="btn btn-primary" target="_blank">View on Drive</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="awards" class="section text-center">
+        <div class="container">
+            <h2>Honors & Awards</h2>
+            <ul class="list-unstyled">
+                <li><strong>Team Excellence Award</strong> - Torry Harris Integration Solutions – Jul 2024</li>
+                <p>Honoured with the Team Excellence Award for exemplary performance and commitment in contributing to the revitalization of the Lakshya 2.0 Application. Demonstrated outstanding teamwork and dedication, leading to significant improvements in application functionality and user experience.</p>
+                <li><strong>Techie of the Quarter 2024</strong> - Torry Harris Integration Solutions – Jul 2024</li>
+                <p>Successfully developed and implemented a valuable Golang solution through comprehensive research and development, significantly enhancing system performance and scalability. This project involved innovative approaches to microservices architecture, demonstrating expertise in Go Gin framework and advanced coding techniques.</p>
+                <li><strong>Techie of the Quarter 2023</strong> - Torry Harris Integration Solutions – May 2022</li>
+                <p>Awarded for outstanding leadership, elevating the team and setting high standards. Recognized for developing the Timesheet Kiosk and Food Booking Project, contributing to excellence.</p>
+            </ul>
+        </div>
+    </section>
+    
+
+    <section id="contact" class="section text-center bg-light">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: srikarsharma16@gmail.com</p>
+            <p>GitHub: <a href="https://github.com/srikarsharma16/" target="_blank">github.com/srikarsharma16</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/srikar-k-263a10191/" target="_blank">linkedin.com/in/srikar-k</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Srikar Kalle. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

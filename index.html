@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srikar Kalle | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+        }
+        .navbar {
+            background-color: #2c3e50;
+        }
+        .navbar-brand, .nav-link {
+            color: #ecf0f1;
+        }
+        .nav-link:hover {
+            color: #3498db;
+        }
+        .hero {
+            background: url('assets/bgimage.webp') no-repeat center center/cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 3rem;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .profile-pic {
+            border-radius: 50%;
+            border: 5px solid white;
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+        .btn-custom {
+            background-color: #3498db;
+            color: white;
+            border-radius: 50px;
+            padding: 10px 20px;
+        }
+        .card {
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .section-heading {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+        .experience-card {
+            margin-bottom: 30px;
+            border-left: 5px solid #3498db;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Srikar Kalle</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero d-flex align-items-center">
+        <div class="overlay"></div>
+        <div class="container hero-content text-center">
+            <h1 class="display-4">Hello, I'm Srikar Kalle</h1>
+            <p class="lead">Software Engineer | AI Enthusiast | Data Scientist</p>
+            <a href="#contact" class="btn btn-custom">Get in Touch</a>
+        </div>
+    </section>
+
+    <section id="about" class="section text-center">
+        <div class="container">
+            <h2 class="section-heading">About Me</h2>
+            <img src="assets/srikarkalle.jpg" class="profile-pic" alt="Profile Picture">
+            <p class="mt-3">I am a passionate Software Engineer with expertise in AI, Machine Learning, and Web Development. Currently pursuing an MSc in Data Science, I specialize in building scalable solutions using Java, Golang, Python, and cutting-edge cloud technologies.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section bg-light">
+        <div class="container">
+            <h2 class="section-heading text-center">Skills</h2>
+            <div class="row text-center">
+                <div class="col-md-4"><i class="fas fa-code fa-3x"></i><h4>Programming</h4><p>Java, Golang, Python, JavaScript, TypeScript, C++</p></div>
+                <div class="col-md-4"><i class="fas fa-server fa-3x"></i><h4>Backend & API</h4><p>Spring Boot, Hibernate, Kafka, Go Gin, REST API, Microservices</p></div>
+                <div class="col-md-4"><i class="fas fa-globe fa-3x"></i><h4>Frontend & Web</h4><p>ReactJS, NodeJS, HTML5, CSS3, Bootstrap, Tailwind</p></div>
+                <div class="col-md-4"><i class="fas fa-database fa-3x"></i><h4>Databases</h4><p>MySQL, MongoDB, PostgreSQL, Data Modeling, Query Optimization</p></div>
+                <div class="col-md-4"><i class="fas fa-cloud fa-3x"></i><h4>Cloud & DevOps</h4><p>AWS (EC2, S3, Lambda), Docker, Kubernetes, CI/CD (Jenkins, GitHub Actions)</p></div>
+                <div class="col-md-4"><i class="fas fa-robot fa-3x"></i><h4>AI & Machine Learning</h4><p>Deep Learning, YOLO, CNN, LSTM, Image Processing, XGBoost</p></div>
+                <div class="col-md-4"><i class="fas fa-bug fa-3x"></i><h4>Testing & Debugging</h4><p>JUnit, Selenium, ELK Stack (Elasticsearch, Logstash, Kibana)</p></div>
+                <div class="col-md-4"><i class="fas fa-tools fa-3x"></i><h4>Tools & IDEs</h4><p>IntelliJ IDEA, Jupyter Notebook, VS Code, Postman, Swagger</p></div>
+                <div class="col-md-4"><i class="fas fa-users fa-3x"></i><h4>Soft Skills</h4><p>Agile Development, Technical Documentation, Leadership, Collaboration</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-heading text-center">Professional Experience</h2>
+            <div class="row">
+                <!-- Software Engineer -->
+                <div class="col-md-6">
+                    <div class="card experience-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Software Engineer</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Torry Harris Integration Solutions – India</h6>
+                            <p><strong>Sep 2021 – Sep 2024</strong></p>
+                            <p>Design and develop scalable backend systems using Java and Golang. Led a team to create and deploy microservices-based solutions and improved the company’s product offerings by optimizing existing software. Key responsibilities:</p>
+                            <ul>
+                                <li>Designed RESTful APIs with Spring Boot and Go Gin</li>
+                                <li>Improved system scalability by implementing event-driven architectures with Kafka</li>
+                                <li>Mentored junior engineers and led code review sessions</li>
+                                <li>Deployed applications to AWS, optimizing cost and resource utilization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Technical Support Engineer -->
+                <div class="col-md-6">
+                    <div class="card experience-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Technical Support Engineer</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Exotel Techcom Pvt. Ltd – India</h6>
+                            <p><strong>Apr 2021 – Aug 2021</strong></p>
+                            <p>Developed and deployed customer-facing automation tools using Python. Increased customer support efficiency and enhanced user engagement through continuous feedback and improvements:</p>
+                            <ul>
+                                <li>Automated workflows with Python-based chatbots integrated with Slack</li>
+                                <li>Analyzed customer interactions and improved chatbot performance</li>
+                                <li>Created technical documentation to improve cross-team collaboration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <h2 class="section-heading text-center">Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">COVID-19 Prediction Model</h5>
+                            <p class="card-text">A machine learning model that predicts COVID-19 infection based on various factors.</p>
+                            <a href="https://github.com/srikarsharma16/PREDICTION-OF-COVID19-INDIA-HOUSTON" class="btn btn-primary" target="_blank">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Machine Learning Portfolio</h5>
+                            <p class="card-text">A portfolio showcasing various data science and machine learning projects.</p>
+                            <a href="https://github.com/srikarsharma16/DataAnalyticsML-Portfolio" class="btn btn-primary" target="_blank">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <i class="bi bi-robot" style="font-size: 3rem; color: #ffc107;"></i> <!-- Icon for Robotics -->
+                        <div class="card-body">
+                            <h5 class="card-title">Deep Learning-Based Robot for Garbage Picking</h5>
+                            <p class="card-text">Developed a wireless-controlled autonomous robot capable of real-time garbage detection using YOLO-based object detection and image processing.</p>
+                            <a href="https://drive.google.com/drive/folders/1voFfd6oeDEouBUsKkFJ42JQo7O25XSvU" class="btn btn-primary" target="_blank">View on Drive</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="awards" class="section bg-light">
+        <div class="container">
+            <h2 class="section-heading text-center">Honors & Awards</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Team Excellence Award</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Torry Harris Integration Solutions – Jul 2024</h6>
+                            <p>Honoured with the Team Excellence Award for exemplary performance and commitment in contributing to the revitalization of the Lakshya 2.0 Application. Demonstrated outstanding teamwork and dedication, leading to significant improvements in application functionality and user experience.</p>
+                            <a href="https://www.linkedin.com/in/srikar-k-263a10191/details/honors/1721229616505/single-media-viewer/?profileId=ACoAAC0tmmsBifSNNoUPYzZ-z4Dxc91uNNcsT-4" class="btn btn-primary" target="_blank">View Award</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Techie of the Quarter 2024</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Torry Harris Integration Solutions – Jul 2024</h6>
+                            <p>Successfully developed and implemented a valuable Golang solution through comprehensive research and development, significantly enhancing system performance and scalability. This project involved innovative approaches to microservices architecture, demonstrating expertise in Go Gin framework and advanced coding techniques.</p>
+                            <a href="https://www.linkedin.com/in/srikar-k-263a10191/details/honors/1721229194547/single-media-viewer/?profileId=ACoAAC0tmmsBifSNNoUPYzZ-z4Dxc91uNNcsT-4" class="btn btn-primary" target="_blank">View Award</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Techie of the Quarter 2023</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Torry Harris Integration Solutions – May 2022</h6>
+                            <p>Awarded for outstanding leadership, elevating the team and setting high standards. Recognized for developing the Timesheet Kiosk and Food Booking Project, contributing to excellence.</p>
+                            <a href="https://www.linkedin.com/in/srikar-k-263a10191/details/honors/1719990718200/single-media-viewer/?profileId=ACoAAC0tmmsBifSNNoUPYzZ-z4Dxc91uNNcsT-4" class="btn btn-primary" target="_blank">View Award</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <section id="contact" class="section bg-light text-center py-5">
+        <div class="container">
+            <h2 class="section-heading text-primary mb-4">Contact Me</h2>
+            <p class="lead mb-3">Feel free to reach out through any of the following platforms:</p>
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-3">
+                    <div class="contact-card p-4 border rounded shadow-sm">
+                        <h5 class="text-uppercase">Email</h5>
+                        <p><a href="mailto:srikarsharma16@gmail.com" class="text-dark">srikarsharma16@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="contact-card p-4 border rounded shadow-sm">
+                        <h5 class="text-uppercase">GitHub</h5>
+                        <p><a href="https://github.com/srikarsharma16/" target="_blank" class="text-dark">github.com/srikarsharma16</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="contact-card p-4 border rounded shadow-sm">
+                        <h5 class="text-uppercase">LinkedIn</h5>
+                        <p><a href="https://www.linkedin.com/in/srikar-k-263a10191/" target="_blank" class="text-dark">linkedin.com/in/srikar-k</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="footer">
+        <p>&copy; 2025 Srikar Kalle. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
